@@ -1,0 +1,9 @@
+{
+  "html": "mausritter.html",
+  "css": "mausritter.css",
+  "authors": "Antonio S",
+  "roll20userid": "2844496",
+  "preview": "mausritter.png",
+  "instructions": "A simple character sheet for the Mausritter system.",
+  "legacy": true
+}
