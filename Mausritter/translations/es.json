@@ -3,9 +3,15 @@
     "dexterity-u": "Destreza",
     "strength-u": "Fuerza",
     "willpower-u": "Voluntad",
-    "weapon-u": "Arma",
+    "pawslots-u": "2 espacios de patas",
+    "bodyslots-u": "2 espacios de cuerpo",
+    "backpackslots-u": "6 espacios de mochila",
     "damage-u": "Daño",
-    "item-u": "Objeto",
-    "quantity-u": "Cnt.",
-    "arcana-followers-notes-u": "Arcana, Seguidores, Notas"
+    "uses-u": "Usos",
+    "notes-u": "Notas",
+    "impaired-u": "Ataque atenuado",
+    "light-u": "Arma ligera",
+    "medium-u": "Arma mediana",
+    "heavy-u": "Arma pesada",
+    "enhanced-u": "Ataque potenciado"
 }

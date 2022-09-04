@@ -11,84 +11,144 @@
         </div>
         <div class="vertical-separator"></div>
         <div class="flex-container">
-            <button class="custom-roll-button" type="roll"
-                value="&{template:test-under} {{rollname=Save - Strength}} {{result=[[1d20]]}} {{target=[[@{ability_strength}]]}}"
-                name="roll_strength"></button>
-            <div class="horizontal-separator"></div>
             <div class="stat-title ability-title" data-i18n="strength-u"></div>
             <div class="stat-inputs flex-container">
                 <input class="stat-input" type="text" name="attr_ability_strength" />
                 <div class="stat-input-separator"></div>
                 <input class="stat-input" type="text" name="attr_ability_strength_max" />
+            <div class="horizontal-separator"></div>
+            <button class="custom-roll-button" type="roll"
+                value="&{template:test-under} {{rollname=Save - Strength}} {{result=[[1d20]]}} {{target=[[@{ability_strength}]]}}"
+                name="roll_strength"></button>
             </div>
         </div>
         <div class="vertical-separator"></div>
         <div class="flex-container">
-            <button class="custom-roll-button" type="roll"
-                value="&{template:test-under} {{rollname=Save - Dexterity}} {{result=[[1d20]]}} {{target=[[@{ability_dexterity}]]}}"
-                name="roll_dexterity"></button>
-            <div class="horizontal-separator"></div>
             <div class="stat-title ability-title" data-i18n="dexterity-u"></div>
             <div class="stat-inputs flex-container">
                 <input class="stat-input" type="text" name="attr_ability_dexterity" />
                 <div class="stat-input-separator"></div>
                 <input class="stat-input" type="text" name="attr_ability_dexterity_max" />
             </div>
+            <div class="horizontal-separator"></div>
+			<button class="custom-roll-button" type="roll"
+                value="&{template:test-under} {{rollname=Save - Dexterity}} {{result=[[1d20]]}} {{target=[[@{ability_dexterity}]]}}"
+                name="roll_dexterity"></button>
         </div>
         <div class="vertical-separator"></div>
         <div class="flex-container">
-            <button class="custom-roll-button" type="roll"
-                value="&{template:test-under} {{rollname=Save - Willpower}} {{result=[[1d20]]}} {{target=[[@{ability_willpower}]]}}"
-                name="roll_willpower"></button>
-            <div class="horizontal-separator"></div>
+
             <div class="stat-title ability-title" data-i18n="willpower-u"></div>
             <div class="stat-inputs flex-container">
                 <input class="stat-input" type="text" name="attr_ability_willpower" />
                 <div class="stat-input-separator"></div>
                 <input class="stat-input" type="text" name="attr_ability_willpower_max" />
             </div>
+            <div class="horizontal-separator"></div>
+            <button class="custom-roll-button" type="roll"
+                value="&{template:test-under} {{rollname=Save - Willpower}} {{result=[[1d20]]}} {{target=[[@{ability_willpower}]]}}"
+                name="roll_willpower"></button>
         </div>
+		
+        <div class="vertical-separator"></div>
+        <div class="flex-container">
+		    <div class="horizontal-separator"></div>
+            <div class="stat-title impaired-title" data-i18n="impaired-u"></div>
+			<button class="custom-roll-button" type='roll' value='Impaired weapon damage: [[1d4]]' name='Rolld4'></button>
+			
+		    <div class="horizontal-separator"></div>
+            <div class="stat-title light-title" data-i18n="light-u"></div>
+			<button class="custom-roll-button" type='roll' value='Light weapon damage: [[1d6]]' name='Rolld6'></button>
+			
+		    <div class="horizontal-separator"></div>
+            <div class="stat-title medium-title" data-i18n="medium-u"></div>
+			<button class="custom-roll-button" type='roll' value='Medium weapon damage: [[1d8]]' name='Rolld8'></button>
+			
+		    <div class="horizontal-separator"></div>
+            <div class="stat-title heavy-title" data-i18n="heavy-u"></div>
+			<button class="custom-roll-button" type='roll' value='Heavy weapon damage: [[1d10]]' name='Rolld10'></button>
+			
+			<div class="horizontal-separator"></div>
+            <div class="stat-title heavy-title" data-i18n="enhanced-u"></div>
+			<button class="custom-roll-button" type='roll' value='Enhanced weapon damage: [[1d12]]' name='Rolld12'></button>
+		</div>
+		
     </div>
     <div class="horizontal-separator"></div>
     <div class="auto-column">
-        <!-- Weapons -->
+        <!-- 2 paw slots -->
         <div class="list-title">
-            <div class="grid-80-percent" data-i18n="weapon-u"></div>
-            <div class="grid-20-percent">
+            <div class="grid-70-percent" data-i18n="pawslots-u"></div>
+            <div class="grid-15-percent">
                 <div data-i18n="damage-u"></div>
             </div>
+			<div class="grid-15-percent">
+                <div data-i18n="uses-u"></div>
+            </div>
         </div>
-        <fieldset class="repeating_weapons">
+        <fieldset class="repeating_slots">
             <div class="list-row">
-                <input type="text" class="list-input grid-80-percent" name="attr_weapon" />
-                <input type="text" class="list-input list-input-center-aligned grid-20-percent"
-                    name="attr_weapon_dmg" />
+                <input type="text" class="list-input grid-70-percent" name="attr_slot" />
+                <input type="text" class="list-input list-input-center-aligned grid-15-percent"
+                    name="attr_slot_dmg" />
+			    <input type="text" class="list-input list-input-center-aligned grid-15-percent"
+                    name="attr_slot_uses" />
             </div>
         </fieldset>
         <div class="vertical-separator"></div>
-        <!-- Items -->
+        <!-- 2 body slots -->
         <div class="list-title">
-            <div class="grid-80-percent" data-i18n="item-u"></div>
-            <div class="grid-20-percent">
-                <div data-i18n="quantity-u"></div>
+            <div class="grid-70-percent" data-i18n="bodyslots-u"></div>
+            <div class="grid-15-percent">
+                <div data-i18n="damage-u"></div>
+            </div>
+			<div class="grid-15-percent">
+                <div data-i18n="uses-u"></div>
             </div>
         </div>
         <fieldset class="repeating_items">
             <div class="list-row">
-                <input type="text" class="list-input grid-80-percent" name="attr_item" />
-                <input type="text" class="list-input list-input-center-aligned grid-20-percent" name="attr_item_qty" />
+                <input type="text" class="list-input grid-70-percent" name="attr_slot" />
+                <input type="text" class="list-input list-input-center-aligned grid-15-percent"
+                    name="attr_slot_dmg" />
+			    <input type="text" class="list-input list-input-center-aligned grid-15-percent"
+                    name="attr_slot_uses" />
             </div>
         </fieldset>
+		
+		<div class="vertical-separator"></div>
+        <!-- 6 backpack slots -->
+        <div class="list-title">
+            <div class="grid-70-percent" data-i18n="backpackslots-u"></div>
+            <div class="grid-15-percent">
+                <div data-i18n="damage-u"></div>
+            </div>
+			<div class="grid-15-percent">
+                <div data-i18n="uses-u"></div>
+            
+			
+			</div>
+        </div>
+        <fieldset class="repeating_items">
+            <div class="list-row">
+                <input type="text" class="list-input grid-70-percent" name="attr_slot" />
+                <input type="text" class="list-input list-input-center-aligned grid-15-percent"
+                    name="attr_slot_dmg" />
+			    <input type="text" class="list-input list-input-center-aligned grid-15-percent"
+                    name="attr_slot_uses" />
+            </div>
+        </fieldset>
+		
     </div>
     <div class="horizontal-separator"></div>
     <div class="auto-column">
-        <!-- Arcana, Followers, Notes -->
+        <!-- Notes -->
         <div class="list-title">
-            <div class="grid-100-percent" data-i18n="arcana-followers-notes-u"></div>
+            <div class="grid-100-percent" data-i18n="notes-u"></div>
         </div>
-        <fieldset class="repeating_arcanas">
+        <fieldset class="repeating_notes">
             <div class="list-textarea-row">
-                <textarea class="list-textarea grid-100-percent" name="attr_arcana" rows="2"></textarea>
+                <textarea class="list-textarea grid-100-percent" name="attr_notes" rows="2"></textarea>
             </div>
         </fieldset>
     </div>

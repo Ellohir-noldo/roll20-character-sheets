@@ -3,9 +3,15 @@
     "dexterity-u": "Dexterity",
     "strength-u": "Strength",
     "willpower-u": "Willpower",
-    "weapon-u": "Weapon",
+    "pawslots-u": "2 Paw slots",
+    "bodyslots-u": "2 Body slots",
+    "backpackslots-u": "6 Backpack slots",
     "damage-u": "Dmg.",
-    "item-u": "Item",
-    "quantity-u": "Qty.",
-    "arcana-followers-notes-u": "Arcana, Followers, Notes"
+    "uses-u": "Uses",
+    "notes-u": "Notes",
+    "impaired-u": "Impaired attack",
+    "light-u": "Light weapon",
+    "medium-u": "Medium weapon",
+    "heavy-u": "Heavy weapon",
+    "enhanced-u": "Enhanced attack"
 }
