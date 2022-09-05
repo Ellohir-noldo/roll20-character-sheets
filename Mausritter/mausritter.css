@@ -161,6 +161,14 @@ button[type="roll"] {
     width: 20%;
 }
 
+.sheet-grid-70-percent {
+    width: 70%;
+}
+
+.sheet-grid-15-percent {
+    width: 15%;
+}
+
 /* Templates */
 
 .sheet-rolltemplate-test-under {
